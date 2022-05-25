@@ -10,14 +10,8 @@
 					Investors In Property<br />
 					Investors in People
            		</h1>
-	            <div class="inline-flex">
-		           <a href="" class="md:mt-8 lg:mt-10 flex items-center px-3 py-2 my-5 bg-sky-500 hover:bg-sky-700 text-sm md:text-base font-bold text-white uppercase rounded border-2 border-transparent shadow-md transition duration-500">
-		           		<span>Find Out More</span>
-		           		<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
-							<path stroke-linecap="round" stroke-linejoin="round" d="M13 5l7 7-7 7M5 5l7 7-7 7" />
-						</svg>
-		           </a>
-	            </div>
+
+           		<x-button url="/about" class="md:mt-8 lg:mt-10" />
 	       
 	            <div class="flex sm:hidden lg:flex justify-center">
 	                <a href="#sectors" class="absolute bottom-0 pb-6">
@@ -73,15 +67,9 @@
            			<p class="text-base lg:text-xl">
            				Our strength is derived from our longevity. We are fortunate to have an incredibly experienced team and an exceptionally solid unencumbered asset base on which to build. Through a continual process of acquisition and improvement financed primarily out of cash-flow, we are producing a steady and controlled expansion of the company.
            			</p>
-           		
-	           		<div class="inline-flex">
-			           <a href="" class="mt-6 md:mt-8 lg:mt-10 flex items-center px-3 py-2 my-5 bg-sky-500 hover:bg-sky-700 text-sm md:text-base font-bold text-white uppercase rounded border-2 border-transparent shadow-md transition duration-500">
-			           		<span>Find Out More</span>
-			           		<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
-								<path stroke-linecap="round" stroke-linejoin="round" d="M13 5l7 7-7 7M5 5l7 7-7 7" />
-							</svg>
-			           </a>
-		            </div>
+
+           			<x-button url="/yet-to-be-decided" cta="Overwrites default cta value...?" class="mt-6 md:mt-8 lg:mt-10" />
+           	
 		        </div>
 			</div>
 			

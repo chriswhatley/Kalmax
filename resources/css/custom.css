@@ -1,9 +1,9 @@
-html {
-	scroll-behavior: smooth
-}
-
 body {
 	font-family: 'Roboto', sans-serif;
+}
+
+.button {
+	@apply flex items-center px-3 py-2 my-5 bg-sky-500 hover:bg-sky-700 text-sm md:text-base font-bold text-white uppercase rounded border-2 border-transparent shadow-md transition duration-500
 }
 
 header.hero {
@@ -257,7 +257,7 @@ header.hero {
 }
 
 /* SM */
-@media (min-width: 640px) {
+@screen sm {
 	.hero .title-accent::before {
 		width: 6rem;
 	}
@@ -268,7 +268,7 @@ header.hero {
 }
 
 /* MD */
-@media (min-width: 768px) {
+@screen md {
 	.hero .title-accent::before {
 		width: 8rem;
 		margin-bottom: 1.5rem;
@@ -292,7 +292,7 @@ header.hero {
 }
 
 /* XL */
-@media (min-width: 1280px) {
+@screen xl {
 
 }
 
