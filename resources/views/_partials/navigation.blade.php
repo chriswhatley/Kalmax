@@ -1,5 +1,5 @@
-		<nav class="fixed inset-x-0 top-0 z-10 text-white bg-[#00171f]">
-			<div class="container mx-auto px-4 md:px-6 lg:pl-10">
+		<nav class="primary-navigation fixed inset-x-0 top-0 z-10 text-white bg-[#00171f]">
+			<div class="container mx-auto px-6">
 				<div class="relative flex justify-between h-24">
 
 					<div class="flex items-center">
@@ -12,14 +12,14 @@
 
 					<div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0" x-data="{ show: false }">
 						<div class="hidden lg:flex sm:space-x-4 ">
-							<a href="#" class="pt-2 text-gray-200 hover:text-sky-500 transition duration-300">
+							<a href="/" class="pt-2 text-gray-200 hover:text-sky-500 transition duration-300">
 								<svg xmlns="http://www.w3.org/2000/svg" class="w-5" viewBox="0 0 22 22" fill="currentColor">
 									<path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
 								</svg>
 							</a>
-							<a href="#" class="text-gray-200 hover:text-sky-500 px-3 py-2 rounded-md text-sm font-semibold uppercase transition duration-300">Commercial</a>
-							<a href="#" class="text-gray-200 hover:text-sky-500 px-3 py-2 rounded-md text-sm font-semibold uppercase transition duration-300">Residential</a>
-							<a href="#" class="text-gray-200 hover:text-sky-500 px-3 py-2 rounded-md text-sm font-semibold uppercase transition duration-300">People</a>
+							<a href="{{ url('sector/commercial') }}" class="text-gray-200 hover:text-sky-500 px-3 py-2 rounded-md text-sm font-semibold uppercase transition duration-300">Commercial</a>
+							<a href="{{ url('sector/residential') }}" class="text-gray-200 hover:text-sky-500 px-3 py-2 rounded-md text-sm font-semibold uppercase transition duration-300">Residential</a>
+							<a href="{{ url('sector/people') }}" class="text-gray-200 hover:text-sky-500 px-3 py-2 rounded-md text-sm font-semibold uppercase transition duration-300">People</a>
 							<a href="#" class="text-gray-200 hover:text-sky-500 px-3 py-2 rounded-md text-sm font-semibold uppercase transition duration-300">News</a>
 							<a href="#" class="text-gray-200 hover:text-sky-500 px-3 py-2 rounded-md text-sm font-semibold uppercase transition duration-300">Tennants Area</a>
 							<a href="#" class="bg-sky-500 text-white px-3 py-2 rounded-md text-sm font-medium upper uppercase" aria-current="page">Contact</a>

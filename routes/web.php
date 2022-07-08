@@ -16,3 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('index');
 });
+
+Route::get('/sector/{sector?}', function ($sector = null) {
+    return view('sector', ['sector' => $sector]);  // TODO : (Refactor to DB record for sector content?)
+})->whereIn('sector', ['commercial', 'residential', 'people']);
+
+Route::view('/about', 'about');

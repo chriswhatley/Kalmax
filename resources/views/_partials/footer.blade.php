@@ -1,5 +1,5 @@
 		<footer class="pt-12 md:pt-24 bg-[#00171f]">
-			<div class="container mx-auto px-4 md:px-6">
+			<div class="container mx-auto px-6 md:px-10">
 				<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-16 text-white">
 					<div>
 						<img class="h-10 md:h-14 w-auto" src="{{ asset('images/layout/kalmax-logo.svg') }}" alt="Kalmax International" />
@@ -140,3 +140,4 @@
 			</section>
 		</footer>
 
+		<script src="{{ asset('js/app.js') }}"></script>

@@ -27,37 +27,35 @@
 	                    </div>                                
 	                </a>     
 	            </div>
-
-	            <div id="sectors"></div>
-
 	        </div>
 	    </div>
 	</header>
 
-	<section class="py-12 md:py-24 sectors">
+	<section class="py-12 md:py-24 sectors" id="sectors">
 		<div class="container mx-auto px-4 md:px-6 grid gap-8 sm:grid-cols-1 md:grid-cols-3 text-white">
             
-            <a href="" class="block w-full h-full cursor-pointer sector">
+            <a href="/sector/commercial" class="block w-full h-full cursor-pointer sector">
                 <div class="commercial">
                 	<h2 class="font-extrabold text-2xl uppercase title-accent">Commercial <span class="block sm:inline-flex">Property</span></h2>
                 </div>
             </a>
 
-            <a href="" class="block w-full h-full cursor-pointer sector">
+            <a href="/sector/residential" class="block w-full h-full cursor-pointer sector">
                 <div class="residential">
                 	<h2 class="font-extrabold text-2xl uppercase title-accent">Residential <span class="block sm:inline-flex">Property</span></h2>
                 </div>
             </a>
 
-            <a href="" class="block w-full h-full cursor-pointer sector">
+            <a href="/sector/people" class="block w-full h-full cursor-pointer sector">
                 <div class="people">
                 	<h2 class="font-extrabold text-2xl uppercase title-accent">Investors <span class="block sm:inline-flex">in People</span></h2>
                 </div>
             </a>
+
         </div>	
 	</section>
 
-	<section class="intro bg-center bg-cover bg-no-repeat text-white">
+	<section class="intro bg-bottom bg-cover bg-no-repeat bg-fixed text-white">
 		<div class="container mx-auto px-4 md:px-6 lg:px-10 py-12 md:py-24">
 			<div class="w-full md:w-2/3">
 				<h2 class="font-extrabold text-2xl sm:text-3xl md:text-4xl xl:text-5xl title-accent uppercase">
@@ -112,15 +110,8 @@
 	           		<div class="mt-6 md:mt-8 lg:mt-10 text-base lg:text-lg">
 	           			<p>Our application has been with Brighton & Hove Council for some time now and after a few changes, we feel our chances are good.</p>
 	           			<p class="mt-4">Lewis Planning have been incredibly helpful through the planning process as have DLG Architects with all the last minute changes "suggested" by the Planning Department.</p>
-	           		
-		           		<div class="inline-flex">
-				           <a href="" class="mt-6 md:mt-8 lg:mt-10 flex items-center px-3 py-2 my-5 bg-sky-500 hover:bg-sky-700 text-sm md:text-base font-bold text-white uppercase rounded border-2 border-transparent shadow-md transition duration-500">
-				           		<span>Find Out More</span>
-				           		<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
-									<path stroke-linecap="round" stroke-linejoin="round" d="M13 5l7 7-7 7M5 5l7 7-7 7" />
-								</svg>
-				           </a>
-			            </div>
+
+			            <x-button cta="Find Out More" class="mt-6 md:mt-8 lg:mt-10"   />
 			        </div>
 				</div>
 			</div>
@@ -128,7 +119,7 @@
 		</div>
 	</section>
 
-	<section class="history bg-center bg-cover bg-no-repeat text-white">
+	<section class="history bg-center bg-cover bg-no-repeat bg-fixed text-white">
 		<div class="container mx-auto px-4 md:px-6 lg:px-10 py-12 md:py-24">
 			<div class="w-full md:w-1/2">
 				<h2 class="font-extrabold text-2xl sm:text-3xl md:text-4xl xl:text-5xl title-accent uppercase">
@@ -138,14 +129,7 @@
            			<p>Founded in 1955 by Victor “Jack” Richard and Douglas Gaten, Kalmax started it’s life as Richard & Gaten Ltd, owning garages and petrol stations in the South East of England.</p>
 					<p class="mt-4">After only a few years, Jack bought Doug out, and continued to build the company from the ground up. When his two sons Karl and Max were born, he changed the name to Kalmax in the hope that one day, they would carry on the legacy.</p>
            		
-	           		<div class="inline-flex">
-			           <a href="" class="mt-6 md:mt-8 lg:mt-10 flex items-center px-3 py-2 my-5 bg-sky-500 hover:bg-sky-700 text-sm md:text-base font-bold text-white uppercase rounded border-2 border-transparent shadow-md transition duration-500">
-			           		<span>Find Out More</span>
-			           		<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
-								<path stroke-linecap="round" stroke-linejoin="round" d="M13 5l7 7-7 7M5 5l7 7-7 7" />
-							</svg>
-			           </a>
-		            </div>
+		            <x-button url="/about" class="mt-6 md:mt-8 lg:mt-10" />
 		        </div>
 			</div>
 			
@@ -171,12 +155,7 @@
 	        		</div>
 
 	        		<footer class="inline-flex p-6">
-			            <a href="#" class="flex items-center px-3 py-2 my-5 bg-sky-500 hover:bg-sky-700 text-sm lg:text-base font-bold text-white uppercase rounded border-2 border-transparent transition duration-500">
-			           		<span>Read More</span>
-			           		<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
-								<path stroke-linecap="round" stroke-linejoin="round" d="M13 5l7 7-7 7M5 5l7 7-7 7" />
-							</svg>
-			           </a>
+			        	<x-button cta="Read More"  />
                 	</footer>
 	        	</article>
 
@@ -192,12 +171,7 @@
 	        		</div>
 
 	        		<footer class="inline-flex p-6">
-			            <a href="#" class="flex items-center px-3 py-2 my-5 bg-sky-500 hover:bg-sky-700 text-sm lg:text-base font-bold text-white uppercase rounded border-2 border-transparent transition duration-500">
-			           		<span>Read More</span>
-			           		<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
-								<path stroke-linecap="round" stroke-linejoin="round" d="M13 5l7 7-7 7M5 5l7 7-7 7" />
-							</svg>
-			           </a>
+			            <x-button cta="Read More"  />
                 	</footer>
 	        	</article>
 
@@ -215,12 +189,7 @@
 	        		</div>
 
 	        		<footer class="inline-flex p-6">
-			            <a href="#" class="flex items-center px-3 py-2 my-5 bg-sky-500 hover:bg-sky-700 text-sm lg:text-base font-bold text-white uppercase rounded border-2 border-transparent transition duration-500">
-			           		<span>Read More</span>
-			           		<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
-								<path stroke-linecap="round" stroke-linejoin="round" d="M13 5l7 7-7 7M5 5l7 7-7 7" />
-							</svg>
-			           </a>
+			        	<x-button cta="Read More"  />
                 	</footer>
 	        	</article>
 
@@ -228,12 +197,7 @@
 
 		    <div class="mt-6 flex justify-center md:justify-end">
 		    	<div class="w-64">
-		    		<a href="#" class="flex items-center px-3 py-2 my-5 bg-sky-500 hover:bg-sky-700 text-sm lg:text-base font-bold text-white uppercase rounded border-2 border-transparent transition duration-500">
-		           		<span>More Kalmax News</span>
-		           		<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
-							<path stroke-linecap="round" stroke-linejoin="round" d="M13 5l7 7-7 7M5 5l7 7-7 7" />
-						</svg>
-		           </a>
+		    		<x-button cta="More Kalmax News"  />
 		    	</div>
 		    </div>
 

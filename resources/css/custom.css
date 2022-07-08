@@ -1,13 +1,14 @@
+html {
+	scroll-behavior: smooth;
+	scroll-padding-top: var(--scroll-padding, 50px);
+}
+
 body {
 	font-family: 'Roboto', sans-serif;
 }
 
 .button {
 	@apply flex items-center px-3 py-2 my-5 bg-sky-500 hover:bg-sky-700 text-sm md:text-base font-bold text-white uppercase rounded border-2 border-transparent shadow-md transition duration-500
-}
-
-header.hero {
-
 }
 
 .hamburger .line{
@@ -201,7 +202,7 @@ header.hero {
 
 .title-accent::before {
 	content: ' ';
-	display:  block;
+	display: block;
 	height: 0.33rem;
 	margin-bottom:  0.75rem;
 	background-color: #0ea5e9;
@@ -212,7 +213,13 @@ header.hero {
 	@apply bg-center bg-fixed bg-no-repeat bg-center bg-cover h-screen relative
 }
 
-.hero .title-accent::before {
+.sidekick {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../images/home-hero-v1-compressed.jpg);
+	@apply bg-center bg-fixed bg-no-repeat bg-center bg-cover h-80
+}
+
+.hero .title-accent::before,
+.sidekick .title-accent::before {
 	width: 5rem;
 }
 
@@ -228,15 +235,15 @@ header.hero {
 	@apply rounded-lg h-40 md:h-64 lg:h-96 p-10 flex bg-center bg-cover overflow-hidden items-center justify-center md:items-end lg:justify-start
 }
 
-.sector .commercial {
+.commercial {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('../images/commercial.jpg');
 }
 
-.sector .residential {
+.residential {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('../images/residential.jpg');
 }
 
-.sector .people {
+.people {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('../images/people.jpg');
 }
 
@@ -274,6 +281,10 @@ header.hero {
 		margin-bottom: 1.5rem;
 	}
 
+	.sidekick {
+		@apply h-[30rem]
+	}
+
 	.title-accent::before {
 		width: 5rem;
 		margin-bottom: 1rem;
@@ -297,6 +308,6 @@ header.hero {
 }
 
 /* 2XL */
-@media (min-width: 1536px) {
+@screen 2xl {
 
 }
