@@ -1136,11 +1136,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-fixed{
   background-attachment: fixed;
 }
-.bg-center{
-  background-position: center;
-}
 .bg-bottom{
   background-position: bottom;
+}
+.bg-center{
+  background-position: center;
 }
 .bg-no-repeat{
   background-repeat: no-repeat;
