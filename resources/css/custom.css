@@ -215,7 +215,6 @@ body {
 
 .sidekick {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../images/home-hero-v1-compressed.jpg);
-	@apply bg-center bg-fixed bg-no-repeat bg-center bg-cover h-80
 }
 
 .hero .title-accent::before,
@@ -227,12 +226,16 @@ body {
 	width: 4rem;
 }
 
-.intro {
+.parliament {
 	background-image: linear-gradient(rgba(0, 23, 31, 0.75), rgba(0, 23, 31, 0.75)), url('../images/parliament.jpg');
 }
 
+.sector {
+	@apply h-40 md:h-64 lg:h-96 bg-center bg-cover overflow-hidden rounded-lg overflow-hidden;
+}
+
 .sector div {
-	@apply rounded-lg h-40 md:h-64 lg:h-96 p-10 flex bg-center bg-cover overflow-hidden items-center justify-center md:items-end lg:justify-start
+	@apply h-full w-full p-10 flex items-center justify-center md:items-end lg:justify-start bg-sky-900/10 hover:bg-sky-900/75 transition duration-300 ease-in-out
 }
 
 .commercial {
@@ -247,6 +250,14 @@ body {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('../images/people.jpg');
 }
 
+.tower-bridge {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('../images/tower-bridge.jpg');
+}
+
+.canal {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('../images/canal.jpg');
+}
+
 .featured-project-image {
 	background-image: url('../images/featured-project.jpg');
 }
@@ -256,11 +267,15 @@ body {
 }
 
 .news {
-	@apply flex flex-col flex-1 rounded-lg overflow-hidden bg-slate-50 hover:bg-slate-600 hover:text-white transition duration-500
+	@apply flex flex-col flex-1 rounded-lg overflow-hidden bg-slate-50 transition duration-500
 }
 
 .news-image {
 	@apply h-40 md:h-48 lg:h-64 p-10 flex bg-center bg-cover overflow-hidden items-center md:items-end
+}
+
+.news:hover {
+	@apply bg-slate-600 text-white
 }
 
 /* SM */
@@ -279,10 +294,6 @@ body {
 	.hero .title-accent::before {
 		width: 8rem;
 		margin-bottom: 1.5rem;
-	}
-
-	.sidekick {
-		@apply h-[30rem]
 	}
 
 	.title-accent::before {

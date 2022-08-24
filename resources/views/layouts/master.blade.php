@@ -3,7 +3,7 @@
 	<head>
 		@include('_partials.meta')
 	</head>
-	<body class="font-sans text-slate-800">
+	<body class="font-sans text-slate-700 text-base">
 
 		@include('_partials.navigation')
 		

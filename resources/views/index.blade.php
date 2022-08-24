@@ -34,20 +34,20 @@
 	<section class="py-12 md:py-24 sectors" id="sectors">
 		<div class="container mx-auto px-4 md:px-6 grid gap-8 sm:grid-cols-1 md:grid-cols-3 text-white">
             
-            <a href="/sector/commercial" class="block w-full h-full cursor-pointer sector">
-                <div class="commercial">
+            <a href="/sectors/commercial" class="sector commercial">
+                <div>
                 	<h2 class="font-extrabold text-2xl uppercase title-accent">Commercial <span class="block sm:inline-flex">Property</span></h2>
                 </div>
             </a>
 
-            <a href="/sector/residential" class="block w-full h-full cursor-pointer sector">
-                <div class="residential">
+            <a href="/sectors/residential" class="sector residential">
+                <div>
                 	<h2 class="font-extrabold text-2xl uppercase title-accent">Residential <span class="block sm:inline-flex">Property</span></h2>
                 </div>
             </a>
 
-            <a href="/sector/people" class="block w-full h-full cursor-pointer sector">
-                <div class="people">
+            <a href="/sectors/people" class="sector people">
+                <div>
                 	<h2 class="font-extrabold text-2xl uppercase title-accent">Investors <span class="block sm:inline-flex">in People</span></h2>
                 </div>
             </a>
@@ -55,24 +55,14 @@
         </div>	
 	</section>
 
-	<section class="intro bg-bottom bg-cover bg-no-repeat bg-fixed text-white">
-		<div class="container mx-auto px-4 md:px-6 lg:px-10 py-12 md:py-24">
-			<div class="w-full md:w-2/3">
-				<h2 class="font-extrabold text-2xl sm:text-3xl md:text-4xl xl:text-5xl title-accent uppercase">
-					Identifying & securing sound investments since 1955.
-           		</h2>
-           		<div class="mt-6 md:mt-8 lg:mt-10">
-           			<p class="text-base lg:text-xl">
-           				Our strength is derived from our longevity. We are fortunate to have an incredibly experienced team and an exceptionally solid unencumbered asset base on which to build. Through a continual process of acquisition and improvement financed primarily out of cash-flow, we are producing a steady and controlled expansion of the company.
-           			</p>
-
-           			<x-button url="/yet-to-be-decided" cta="Overwrites default cta value...?" class="mt-6 md:mt-8 lg:mt-10" />
-           	
-		        </div>
-			</div>
-			
-		</div>
-	</section>
+	<x-sidekick 
+		title="Identifying & securing sound investments since 1955." 
+		intro="Our strength is derived from our longevity. We are fortunate to have an incredibly experienced team and an exceptionally solid, unencumbered asset-base on which to build. Through a continual process of acquisition and improvement financed primarily out of cash-flow, we are producing a steady and controlled expansion of the company." 
+		image="parliament"
+		cta=" Our Sectors"
+		url="/sectors"  
+		extra-classes="h-[36rem]"
+	/>
 
 	<section class="py-12 md:py-24 sectors bg-slate-50">
 		<div class="container mx-auto px-4 md:px-6 lg:px-10">
@@ -115,7 +105,6 @@
 			        </div>
 				</div>
 			</div>
-
 		</div>
 	</section>
 
@@ -148,7 +137,7 @@
 	        		<div class="news-image" style="background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url({{ asset('images/news-people.jpg') }});"></div>
 	        		<div class="flex-1 p-6 space-y-6">
 	        			<header>
-	                		<span class="font-base uppercase text-sky-500">People</span>
+	                		<span class="text-sm uppercase text-sky-500">People</span>
 	                		<h3 class="mt-1 font-extrabold text-xl uppercase">This is a news title</h3>		
 		                </header>									
 	        			<p class="mt-6">This category is designed to recognise products or solutions that have been developed for either active or passive fire protection.</p>
@@ -164,7 +153,7 @@
 	        		<div class="news-image" style="background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url({{ asset('images/news-residential.jpg') }});"></div>
 	        		<div class="flex-1 p-6 space-y-6">
 	        			<header>
-	                		<span class="font-base uppercase text-sky-500">Residential</span>
+	                		<span class="text-sm uppercase text-sky-500">Residential</span>
 	                		<h3 class="mt-1 font-extrabold text-xl uppercase">This is another news title</h3>		
 		                </header>									
 	        			<p class="mt-6">This category is designed to recognise products or solutions that have been developed for either active or passive fire protection.</p>
@@ -180,7 +169,7 @@
 	        		<div class="news-image" style="background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url({{ asset('images/news-commercial.jpg') }});"></div>
 	        		<div class="flex-1 p-6 space-y-6">
 	        			<header>
-	                		<span class="font-base uppercase text-sky-500">Commercial</span>
+	                		<span class="text-sm uppercase text-sky-500">Commercial</span>
 	                		<h3 class="mt-1 font-extrabold text-xl uppercase">This is yet another news title</h3>		
 		                </header>									
 	        			<p class="mt-6">

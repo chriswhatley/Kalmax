@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\SectorController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,8 +18,11 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/sector/{sector?}', function ($sector = null) {
-    return view('sector', ['sector' => $sector]);  // TODO : (Refactor to DB record for sector content?)
-})->whereIn('sector', ['commercial', 'residential', 'people']);
+Route::get('/sectors', [SectorController::class, 'index']);
+
+Route::get('/sectors/{sector:slug}', [SectorController::class, 'show'])->whereIn('sector', ['commercial', 'residential', 'people']);
 
 Route::view('/about', 'about');
+
+// Kitchen Sink Style Guide (Development Only)
+Route::view('/kitchen-sink', 'kitchen-sink');
