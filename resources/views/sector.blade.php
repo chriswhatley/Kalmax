@@ -2,25 +2,11 @@
 
 @section('main')
 
-
-
-	<x-sidekick image="canal" extra-classes="h-96" />
-
-	
-	{{-- <header class="{{ $sector }} bg-no-repeat bg-cover h-96">
-		<!-- Overlay Background + Center Control -->
-		<div class="h-full bg-opacity-50 bg-black flex items-center justify-start text-white">
-			<div class="container mx-auto px-4 md:px-6 lg:pl-10 uppercase">
-				<h1 class="sm:mt-20 font-extrabold text-2xl sm:text-3xl md:text-4xl xl:text-5xl title-accent">
-					{{ $sector ?? 'Sectors' }}
-           		</h1>
-	        </div>
-	    </div>
-	</header> --}}
+	<x-sidekick image="{{ $sector->image ?? 'parliament'}}" />
 
 	<section class="py-12 md:py-24 sectors" id="sectors">
 		
-	    	<div class="container mx-auto px-4 md:px-6">
+	    	<div class="container mx-auto px-4 md:px-8">
 
 	    		@empty($sector)
 			    	<div>
@@ -53,9 +39,11 @@
 		        @endempty
 
 		        @isset($sector)
-					<h2 class="font-extrabold text-2xl sm:text-3xl md:text-4xl xl:text-5xl uppercase title-accent">{{ $sector }}</h2> 
+					<h2 class="font-extrabold text-2xl sm:text-3xl md:text-4xl xl:text-5xl uppercase title-accent">{{ $sector->title }}</h2> 
 
-				    <p>This needs to be refactored to get the relevent 'sector' content from thge DB...</p>
+				   <div class="mt-6 md:mt-8">
+			   			{{ $sector->description }}
+				   </div>
 				@endisset 
 
 	        </div>	

@@ -258,6 +258,22 @@ body {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('../images/canal.jpg');
 }
 
+.woolwich {
+	background-image: linear-gradient(rgba(0, 23, 31, 0.50), rgba(0, 23, 31, 0.50)), url('../images/woolwich.jpg');
+}
+
+.thames {
+	background-image: linear-gradient(rgba(0, 23, 31, 0.75), rgba(0, 23, 31, 0.75)), url('../images/thames.jpg');
+}
+
+.city {
+	background-image: linear-gradient(rgba(0, 23, 31, 0.50), rgba(0, 23, 31, 0.50)), url('../images/city.jpg');
+}
+
+.bar {
+	background-image: linear-gradient(rgba(0, 23, 31, 0.50), rgba(0, 23, 31, 0.50)), url('../images/bar.jpg');
+}
+
 .featured-project-image {
 	background-image: url('../images/featured-project.jpg');
 }

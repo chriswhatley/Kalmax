@@ -7,7 +7,7 @@
 	'extraClasses' => '',
 ])
 
-<section {{ $attributes->merge(['class' => 'flex items-center bg-cover bg-right-bottom bg-no-repeat bg-fixed text-white '.$extraClasses.' '.$image]) }}>
+<section {{ $attributes->merge(['class' => 'h-[50vh] flex items-center bg-cover bg-center bg-no-repeat bg-fixed text-white '.$extraClasses.' '.$image]) }}>
 
 	<div class="container mx-auto px-4 md:px-6 lg:px-10 py-12 md:py-24">
 		<h2 class="font-extrabold text-2xl sm:text-3xl md:text-4xl xl:text-5xl title-accent uppercase">{{ $title }}</h2>

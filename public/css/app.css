@@ -381,7 +381,23 @@ body {
 }
 
 .canal {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(/images/canal.jpg?4ec9377ce9e3433ff19aa2e3cb3981aa);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(/images/canal.jpg?6aba0b8f0c9026960ced2eed22834284);
+}
+
+.woolwich {
+	background-image: linear-gradient(rgba(0, 23, 31, 0.50), rgba(0, 23, 31, 0.50)), url(/images/woolwich.jpg?2f22d3111299bc01ac4f1c1a0a72247c);
+}
+
+.thames {
+	background-image: linear-gradient(rgba(0, 23, 31, 0.75), rgba(0, 23, 31, 0.75)), url(/images/thames.jpg?4b2f66e7ae95603b062141a603851f37);
+}
+
+.city {
+	background-image: linear-gradient(rgba(0, 23, 31, 0.50), rgba(0, 23, 31, 0.50)), url(/images/city.jpg?ae402a344b583fa2af6c67d724882b73);
+}
+
+.bar {
+	background-image: linear-gradient(rgba(0, 23, 31, 0.50), rgba(0, 23, 31, 0.50)), url(/images/bar.jpg?a844622217de27620ad4b8503e9961bb);
 }
 
 .featured-project-image {
@@ -1196,6 +1212,15 @@ select{
 .h-6{
   height: 1.5rem;
 }
+.h-2\/5{
+  height: 40%;
+}
+.h-1\/2{
+  height: 50%;
+}
+.h-\[50vh\]{
+  height: 50vh;
+}
 .min-h-screen{
   min-height: 100vh;
 }
@@ -1373,9 +1398,6 @@ select{
 }
 .bg-center{
   background-position: center;
-}
-.bg-right-bottom{
-  background-position: right bottom;
 }
 .bg-no-repeat{
   background-repeat: no-repeat;
@@ -1791,6 +1813,10 @@ select{
   .md\:px-6{
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+  }
+  .md\:px-8{
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
   .md\:pl-10{
     padding-left: 2.5rem;

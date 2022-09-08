@@ -15,7 +15,7 @@ class SectorController extends Controller
     public function index()
     {
         // show all sectors
-        echo 'sectors index in here...';
+        return view('sector');
     }
 
     /**
@@ -46,10 +46,9 @@ class SectorController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function show(Sector $sector)
-    {
-        echo 'good to here... : '.$sector;
-        
-        //return view('sector', ['sector' => $sector]);
+    {   
+        // show a specific sector
+        return view('sector', ['sector' => $sector]);
     }
 
     /**
