@@ -59,9 +59,10 @@
 		title="Identifying & securing sound investments since 1955." 
 		intro="Our strength is derived from our longevity. We are fortunate to have an incredibly experienced team and an exceptionally solid, unencumbered asset-base on which to build. Through a continual process of acquisition and improvement financed primarily out of cash-flow, we are producing a steady and controlled expansion of the company." 
 		image="parliament"
-		cta=" Our Sectors"
+		cta="What we do"
 		url="/sectors"  
-		extra-classes="h-[36rem]"
+		extraClasses="h-[42rem]"
+		contentWidth="lg:w-1/2"
 	/>
 
 	<section class="py-12 md:py-24 sectors bg-slate-50">
@@ -108,22 +109,14 @@
 		</div>
 	</section>
 
-	<section class="history bg-center bg-cover bg-no-repeat bg-fixed text-white">
-		<div class="container mx-auto px-4 md:px-6 lg:px-10 py-12 md:py-24">
-			<div class="w-full md:w-1/2">
-				<h2 class="font-extrabold text-2xl sm:text-3xl md:text-4xl xl:text-5xl title-accent uppercase">
-					Who We Are
-           		</h2>
-           		<div class="mt-6 md:mt-8 lg:mt-10 text-base lg:text-lg">
-           			<p>Founded in 1955 by Victor “Jack” Richard and Douglas Gaten, Kalmax started it’s life as Richard & Gaten Ltd, owning garages and petrol stations in the South East of England.</p>
-					<p class="mt-4">After only a few years, Jack bought Doug out, and continued to build the company from the ground up. When his two sons Karl and Max were born, he changed the name to Kalmax in the hope that one day, they would carry on the legacy.</p>
-           		
-		            <x-button url="/about" class="mt-6 md:mt-8 lg:mt-10" />
-		        </div>
-			</div>
-			
-		</div>
-	</section>
+	<x-sidekick 
+		title="Who We Are" 
+		intro="Founded in 1955 by Victor “Jack” Richard and Douglas Gaten, Kalmax started it’s life as Richard & Gaten Ltd, owning garages and petrol stations in the South East of England. <br /><br />After only a few years, Jack bought Doug out, and continued to build the company from the ground up. When his two sons Karl and Max were born, he changed the name to Kalmax in the hope that one day, they would carry on the legacy." 
+		image="history"
+		url="/about"  
+		extraClasses="h-[42rem]"
+		contentWidth="lg:w-1/2"
+	/>
 
 	<section class="pt-12 pb-10 md:py-24 md:pb-16 sectors">
 		<div class="container mx-auto px-4 md:px-6">
@@ -185,8 +178,8 @@
 		    </div>
 
 		    <div class="mt-6 flex justify-center md:justify-end">
-		    	<div class="w-64">
-		    		<x-button cta="More Kalmax News"  />
+		    	<div class="w-72">
+		    		<x-button cta="Kalmax News Archive"  />
 		    	</div>
 		    </div>
 

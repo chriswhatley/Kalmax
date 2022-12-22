@@ -158,6 +158,10 @@ body {
 	}
 }
 
+.float-right {
+	float: right;
+}
+
 @keyframes mouse-wheel {
 	0% {
 		top: 1px

@@ -2,15 +2,20 @@
 
 @section('main')
 
-	<x-sidekick image="{{ $sector->image ?? 'parliament'}}" />
+	<x-sidekick 
+		image="{{ $sector->image ?? 'parliament'}}" 
+		extraClasses="h-[30rem] bg-bottom"
+	/>
 
 	<section class="py-12 md:py-24 sectors" id="sectors">
 		
 	    	<div class="container mx-auto px-4 md:px-8">
 
 	    		@empty($sector)
-			    	<div>
-			    		<p>To find out more about what we do and how Kalmax might be able to offer a partnership, please click on one of the links below or feel free to <a href="/contact" class="">get in touch</a></p>
+	    			<h2 class="font-extrabold text-2xl sm:text-3xl md:text-4xl xl:text-5xl uppercase title-accent">What we do</h2> 
+
+				  	<div class="mt-6 text-lg lg:text-xl">
+			    		<p>To find out more about what we do and how Kalmax might be able to offer a partnership, please click on one of the sectors below.</p>
 			    	</div>
 
 					
